@@ -6,7 +6,9 @@
 5. Own Github - create a new github repo
 6. In the terminal - push into the new repo
 7. In the terminal - Run "AWS Configure" // config access and secret key access
-8. ECR - For private Repo - //Permission needed: ecr:GetAuthorizationToken
+8. 
+For EC2 only: set up -> IAM Policy: AmazonEC2ContainerRegistryPowerUser (AWS Managed Policy)
+ECR - For private Repo - //Permission needed: ecr:GetAuthorizationToken
 In the terminal - Run 
 "aws ecr get-login-password --region ap-southeast-1 |
 docker login --username AWS --password-stdin <aws account number>.dkr.ecr.ap-southeast-1.amazonaws.com"
